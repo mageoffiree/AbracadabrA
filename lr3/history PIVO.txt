@@ -1,0 +1,23 @@
+   58  cd ./AbracadabrA/lr3/labfiles/Пивоварение/tests/
+   59  cat TEST-1 >> 1.txt
+   60  cat TEST-2 >> 1.txt
+   61  cat TEST-3 >> 1.txt
+   62  cat TEST-4 >> 1.txt
+   63  cat 1.txt | grep 2023 >> 2.txt
+   64  cat 2.txt | awk -F ";" '{print $1 "," $2 "," $5}' >> 3.txt
+   65  cat 3.txt | awk -F ',' '{print $3 "," $1 "," $2}' >> 4.txt
+   66  cat 4.txt | sort -t "," -k1 >> 5.txt 
+   67  sed '1,112d' ./5.txt >> 6.txt
+   68  cat 6.txt | awk -F ',' '{print $2 "," $3 "," $1}' >> 7.txt
+   69  cat 7.txt | sort -t "," -nk1 -k2 >> 8.txt
+   70  ----------------------
+   71  cat 1.txt | sort -t ";" -nk1 -k2 >> 9.txt
+   72  cat 9.txt | awk -F ';' '{print $2 "," $4}' >> 10.txt
+   73  cat 10.txt | grep 5 >> 11.txt
+   74  cat 11.txt | sort -k1 >> 12.txt
+   75  --------
+   76  cat 10.txt | grep 25 > 11.txt
+   77  cat 11.txt | sort -k1 > 12.txt
+   78  echo "Число студентов, набравших 25 верных ответов: 101" >> 8.txt
+   79  mv 8.txt Отчет.txt
+   80  history >> history.txt

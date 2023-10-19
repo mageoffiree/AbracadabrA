@@ -1,0 +1,26 @@
+   88  history 
+   89  cd ./AbracadabrA/lr3/labfiles/Криптозоология/tests/
+   90  grep "ChernyshovDM" ./*
+   91  sed -i '/A-06-20;ChernyshovDM;2023;[0-2]*;[0-2]/d' ./*
+   92  grep "ChernyshovDM" ./*
+   93  cd ./AbracadabrA/lr3/labfiles/Пивоварение/tests
+   94  cd ./AbracadabrA/lr3/labfiles/Пивоварение/tests
+   95  grep "ChernyshovDM" ./*
+   96  sed -i '/A-06-20;ChernyshovDM;2023;[0-10]*;[0-2]/d' ./*
+   97  grep "ChernyshovDM" ./*
+   98  sed -i '/A-06-20;ChernyshovDM;2023;[8]*;[0-2]/d' ./*
+   99  grep "ChernyshovDM" ./*
+  100  ----------
+  101  cd ./AbracadabrA/lr3/labfiles/Пивоварение/
+  102  grep "ChernyshovDM" ./A-06-20-attendance 
+  103  sed -i -E 's/(ChernyshovDM )([01]*)/\111111111111111111/g' ./A-06-20-attendance 
+  104  grep "ChernyshovDM" ./A-06-20-attendance 
+  105  cd ./AbracadabrA/lr3/labfiles/Криптозоология/
+  106  grep "ChernyshovDM" ./A-06-20-attendance 
+  107  sed -i -E 's/(ChernyshovDM )([01]*)/\111111111111111111/g' ./A-06-20-attendance 
+  108  grep "ChernyshovDM" ./A-06-20-attendance 
+  109  --------
+  110  cd ./AbracadabrA/lr3/labfiles/students/general/notes
+  111  vim ./CNames.log 
+  112  vim ./CNames.log 
+  113  history >> ./history.txt
